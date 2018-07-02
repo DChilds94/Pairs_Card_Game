@@ -15,6 +15,7 @@ class PairContainer extends Component {
     this.resetGameNewPlayers = this.resetGameNewPlayers.bind(this);
     this.resetGameSamePlayers = this.resetGameSamePlayers.bind(this);
     this.selectPlayers = this.selectPlayers.bind(this);
+    // this.getPlayersFromDB = this.getPlayersFromDB.bind(this);
   }
 
   // removed this <p>This is a pairs containers</p>
@@ -40,6 +41,17 @@ componentDidMount(){
     fetch(url)
     .then(res => res.json())
     .then(Deck => this.setState({deck: Deck.cards}))
+
+
+    const newArray = [];
+    const url2 = "/api/users";
+    fetch(url2)
+      .then(res => res.json())
+      .then(players => players.forEach(player => {
+        newArray.push(player.Player);
+      })).then(Deck => this.setState({players: newArray}))
+
+
   }
 
   resetGameNewPlayers(){
@@ -76,6 +88,18 @@ componentDidMount(){
 }
         this.setState({players: playersArray})
   }
+
+  getPlayersFromDB(){
+    // const url = "/api/users";
+    // fetch(url)
+    //   .then(res => res.json())
+    //   .then(players => this.setState({
+    //     players: [players[0].Player]
+    //   }));
+
+
+  }
+
 
 }
 
