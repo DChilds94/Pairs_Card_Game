@@ -43,22 +43,19 @@ class PlayerContainer extends Component {
       })
       .then(response => response.json())
       .catch(error => console.error(`Fetch Error =\n`, error))
-        this.setState({
+      this.setState({
         players: this.state.players})
 
+        this.componentDidMount()
+      } // end of handleSubmit
 
-      // this.state.players.push(player);
+      render(){
+        return (<PlayerForm players={this.state.players} onPlayerSubmit={this.handleSubmit}/>
 
-      // this.setState({players: this.state.players})
-    } // end of handleSubmit
-
-    render(){
-      return (<PlayerForm players={this.state.players} onPlayerSubmit={this.handleSubmit}/>
-
-      )// end of return
-    } // end of render
-  }  // end of class
+        )// end of return
+      } // end of render
+    }  // end of class
 
 
 
-  export default PlayerContainer;
+    export default PlayerContainer;
