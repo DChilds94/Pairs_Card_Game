@@ -12,10 +12,11 @@ h3 {
   /* text-align: left; */
 }
 
-h2 {
+#home-heading {
   display: flex;
   justify-content: left;
   font-size: 46px;
+  margin: 10px;
 }
 
 #rules {

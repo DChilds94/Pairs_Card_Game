@@ -214,13 +214,11 @@ class PairsTable extends Component {
   }
 
   setActivePlayer() {
-    const players = document.querySelectorAll(".stats-player")
-    console.log(players);
-    players.forEach(player => {
-      if(player.value === this.state.currentPlayerIndex) {
-        player.setAttribute("id", "player-" + player.value)
-      }
-    })
+    // const table = document.getElementById("xxx");
+    // if (!table) return;
+    // table.style="color: red !important";
+    // const player = document.getElementById("row-" + this.state.currentPlayerIndex)
+    // player.style="color: gold";
   }
 
   render() {
@@ -262,7 +260,7 @@ class PairsTable extends Component {
         {this.setActivePlayer()}
       </div>
       <div id="container-table-right">
-        <StatsBox players={this.props.players} pairs={this.state.pairsFound} turns={this.state.turnsTaken}/>
+        <h1 id="leaderboard">Leaderboard</h1>
       </div>
     </div>
   )

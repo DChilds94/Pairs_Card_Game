@@ -5,6 +5,7 @@
 #stats-heading {
   text-align: center;
   color: white;
+  justify-content: center;
 }
 
 .stats-table-heading {
@@ -12,6 +13,7 @@
   font-size: 1.25em;
 }
 
-#player-0, #player-1, #player-2, #player-3{
-  color: gold;
+.stats-player {
+  font-size: 1em;
+  text-align: center;
 }

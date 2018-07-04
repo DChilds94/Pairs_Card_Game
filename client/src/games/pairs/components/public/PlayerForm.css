@@ -3,7 +3,8 @@
 #create-list {
   display: flex;
   flex-flow: column;
-  padding: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -11,26 +12,50 @@
 
 #list {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-
-  padding: 50px;
+  overflow: scroll;
+  padding-top: 30px;
+  min-height: 300px;
+  height:300px;
 }
 
-td {
-padding: 8px;
-margin: 10px;
-text-align: left;
-font-size: 30px;
+#form-div {
+  padding-top: 30px;
 }
 
-th {
-  padding: 8px;
-  font-size: 40px;
+
+.players-page-heading {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  margin: 5px;
 }
 
-h1 {
-  text-align: left;
-  font-size: 46px;
+#add-player-form {
+  height: 20px;
+}
 
+input#add-player-button {
+  align-text: right;
+  height: 60px;
+}
+
+#map-players {
+  flex-direction: row;
+  display: flex;
+
+}
+
+.existing-players-table-data {
+
+}
+
+.existing-players-table-delete {
+
+}
+
+.existing-players-table-row {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 26px;
+  flex-direction: row;
 }

@@ -1,7 +1,7 @@
 #about-container {
   display: grid;
   grid-template-columns: 0.7fr 1.6fr 0.7fr;
-  min-width: 725px;
+  min-width: 45.313em;
   border-bottom: 1px solid black;
 }
 
@@ -16,13 +16,14 @@
   grid-column-end: span 1;
   text-align: center;
   margin:0;
+  padding-top: 1.25em;
 }
 
 #container-about-center {
   grid-column-start: 2;
   grid-column-end: span 1;
-  min-height: 500px;
-  min-width: 725px;
+  min-height: 31.250em;
+  min-width: 45.313em;
   height: 100%;
   color: black;
   display: flex;
@@ -42,11 +43,9 @@
 }
 
 #contributors {
-  padding-top: 1.3em;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
 
 #container-about-right {
@@ -59,15 +58,22 @@
   width: 100%;
 }
 
-img {
-  height: 5em;
-  width: 5em;
+.profile-pic {
+  height: 6em;
 }
 
 #project-div {
   padding-top: 1.3em;
   padding-left: 1.3em;
   padding-right: 1.3em;
+}
+
+#project-brief {
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .brief-list {
@@ -84,5 +90,35 @@ img {
 #contact-div {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  text-align: center;
+}
+
+#mvp-heading {
+  padding-left: 1.250em;
+}
+
+#extensions-heading {
+  padding-left: 1.250em;
+}
+
+.linkedin {
+  height: 2em;
+}
+
+.github {
+  height: 2em;
+  padding-left: 1.5em;
+}
+
+.social-media-div {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+#ruaridh-div, #connor-div, #brian-div, #daniel-div {
+  padding: 1.250em;
 }
