@@ -225,7 +225,7 @@ class PairsTable extends Component {
 
     var renderGame = null;
     // change to 26 at the end of development
-    if (this.state.totalPairsFound === 1) {
+    if (this.state.totalPairsFound === 3) {
       renderGame =
       <FinishGame
         players={this.props.players}
